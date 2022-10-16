@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font: 1.5em Arial, Helvetica, sans-serif;
+}
+
+main {
+    background: green;
+    width: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+.conteudo {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid lightcoral;
+    background: lightsalmon;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    float: right;
+}
+
+#conteudo1 {
+    /* width: 150px;
+    height: 150px;
+    background-color: aquamarine; */
+
+    float: right;
+}
+
+#conteudo2 {
+    clear: right;
+}
