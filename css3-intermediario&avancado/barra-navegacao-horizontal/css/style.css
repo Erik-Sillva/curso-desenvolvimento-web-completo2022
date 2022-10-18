@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    text-align: center;
+    margin: 1em;
+}
+
+nav {
+    width: 100%;
+}
+
+ul {
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    background: #fff url(../img/fundo-horizontal.png) no-repeat center/cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li {
+    margin: 10px;
+    position: relative;
+}
+
+ul li::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    transition: .3s ease-in-out;
+    bottom: 0;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+ul li:hover::after {
+    width: 100%;
+}
+
+ul li a {
+    position: relative;
+    display: block;
+    padding: 10px 2em;
+    color: #fff;
+
+    background: url(../img/divisor.png) repeat-y;
+}
+
+ul .home a {
+    background: none;
+}
+
+#home #navegacao .home::after,
+#sobre #navegacao .sobre::after,
+#servicos #navegacao .servicos::after,
+#noticias #navegacao .noticias::after,
+#contato #navegacao .contato::after {
+    width: 100%;
+}
