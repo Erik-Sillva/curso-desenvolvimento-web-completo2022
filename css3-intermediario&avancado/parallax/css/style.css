@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Paradise";
+    src: url(../font/birdsofparadise.woff) format('opentype');
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(119, 119, 119, 0.425);
+    border-radius: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    color: #777;
+    background: #000;
+}
+
+
+section {
+    padding: 3em 5em;
+    color: #777;
+    background: #fff;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 1em;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 2em;
+}
+
+div.blur {
+    opacity: .9;
+    border-radius: .5em;
+    background: rgb(138, 138, 138);
+}
+
+.box p {
+    width: auto;
+    padding: 1em 3em;
+    font-size: 2em;
+    font-family: "Paradise", Arial, sans-serif;
+    color: #fff;
+}
+
+.box1, .box2, .box3, .box4 {
+    height: 100%;
+    opacity: .8;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1 { 
+    background: url(../img/imagem1.jpg) no-repeat fixed center/cover;
+}
+
+.box2 {
+    background: url(../img/imagem2.jpg) no-repeat fixed center/cover;
+}
+
+.box3 {
+    background: url(../img/imagem3.jpg) no-repeat fixed center/cover;
+}
+
+.box4 {
+    background: url(../img/imagem4.jpg) no-repeat fixed center/cover;
+}
+
+@media screen and (min-width: 1400px) {
+    p {
+        width: 50%;
+    }
+}

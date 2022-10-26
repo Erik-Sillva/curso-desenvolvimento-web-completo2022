@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Normalize - CSS</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <form>
+            <section>
+                <div>
+                    <label for="name">Nome: </label>
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                </div>
+
+                <div>
+                    <label for="name">Sobrenome: </label>
+                    <input type="text" name="name" id="name" placeholder="Last Name" required>
+                </div>
+
+                <div>
+                    <label for="tel">Telefone: </label>
+                    <input type="tel" name="tel" id="tel" required>
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <label for="masc">Masculino</label>
+                    <input type="radio" name="sex" value="m" id="masc" required>
+                </div>
+
+                <div>
+                    <label for="fem">Feminino</label>
+                    <input type="radio" name="sex" value="f" id="fem" required>
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <label for="ps">PlayStation</label>
+                    <input type="checkbox" name="ps" id="ps">
+
+                    <label for="xbox">Xbox</label>
+                    <input type="checkbox" name="xbox" id="xbox">
+                </div>
+
+                <div>
+                    <label for="ntd">Nitendo</label>
+                    <input type="checkbox" name="ntd" id="ntd">
+
+                    <label for="gb">Game Boy</label>
+                    <input type="checkbox" name="gb" id="gb">
+                </div>
+
+                <div>
+                    <label for="cor">Cor: </label>
+                    <input type="color" name="color" id="cor">
+                </div>
+
+                <div>
+                    <label for="arq">Selecionar arquivo</label>
+                    <input type="file" name="arquivo" id="arq">
+                </div>
+            </section>
+        </form>
+    </fieldset>
+</body>
+</html>
